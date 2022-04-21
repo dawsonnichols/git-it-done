@@ -24,7 +24,7 @@ var displayRepos = function(repos, searchTerm) {
     console.log(searchTerm); 
     repoContainerEl.textContent = "";
     repoSearchTerm.textContent = searchTerm; 
-    for (var i = 0; i <repos.length; i++) {
+    for (var i = 0; i < repos.length; i++) {
         var repoName = repos[i].owner.login + "/" + repos[i].name;
         var repoEl = document.createElement("div");
         repoEl.classList = "list-item flex-row justify-space-between align-center";
